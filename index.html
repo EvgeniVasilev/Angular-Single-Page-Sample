@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html data-ng-app="">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Angular Geographical Glossary</title>
+        <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+        <link rel="stylesheet" href="main.css"/>
+    </head>
+    <body>
+        <div class="container">
+            <div data-ng-controller="geographicalGlossary">
+                <h1 class="header" data-ng-bind="heading"></h1>
+                <span data-ng-repeat="item in items">
+                    <a href="" data-ng-click="showItem(item.description, item.title, item.img)">
+                        <span data-ng-bind="item.title"></span>
+                    </a>
+                </span>
+                <div>
+                    <h2 id="titles"></h2>
+                    <img src="images/cultural-map.jpg" id="maps"  alt="Maps of Countries" />
+                    <p id="home"></p>
+                </div>
+            </div>
+            <h3 class="header">&copy;evgenivasilev1209@abv.bg</h3>
+        </div>
+        <script type="text/javascript" src="angular_api.js"></script>
+    </body>
+
+</html>
